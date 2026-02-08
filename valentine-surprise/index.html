@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Opening Animation -->
+        <div class="opening-screen" id="openingScreen">
+            <div class="hearts-container">
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💘</div>
+                <div class="heart">💝</div>
+                <div class="heart">💗</div>
+            </div>
+            <h1 class="title">For My Special Someone</h1>
+            <button class="start-btn" id="startBtn">Open Your Surprise 💝</button>
+        </div>
+
+        <!-- Main Content (Hidden Initially) -->
+        <div class="main-content" id="mainContent">
+            <!-- Header -->
+            <header class="header">
+                <h1><i class="fas fa-heart"></i> Happy Valentine's Day! <i class="fas fa-heart"></i></h1>
+                <p class="subtitle">This is for you, my lovelove ❤️</p>
+            </header>
+
+            <!-- Love Messages -->
+            <section class="messages">
+                <div class="message-card">
+                    <i class="fas fa-star message-icon"></i>
+                    <p>Every moment with you is magical ✨</p>
+                </div>
+                <div class="message-card">
+                    <i class="fas fa-sun message-icon"></i>
+                    <p>You light up my world like nobody else 🌟</p>
+                </div>
+                <div class="message-card">
+                    <i class="fas fa-music message-icon"></i>
+                    <p>My heart sings a love song just for you 🎵</p>
+                </div>
+                <div class="message-card">
+                    <i class="fas fa-laugh-beam message-icon"></i>
+                    <p>Your smile, your eyes is my favorite thing in the world 🥰</p>
+                </div>
+            </section>
+
+            <!-- The Big Question -->
+            <section class="question-section">
+                <div class="question-box">
+                    <h2><i class="fas fa-question-circle"></i> The Most Important Question</h2>
+                    <div class="heart-animation">
+                        <div class="pulse-heart">💖</div>
+                    </div>
+                    <p class="question-text">Will you be my Valentine?</p>
+                    
+                    <div class="options" id="options">
+                        <button class="option-btn yes-btn" id="yesBtn">
+                            <i class="fas fa-heart"></i> YES! Absolutely! 💖
+                        </button>
+                        <button class="option-btn maybe-btn" id="maybeBtn">
+                            <i class="fas fa-kiss-wink-heart"></i> Try asking again! 😘
+                        </button>
+                        <button class="option-btn no-btn" id="noBtn">
+                            <i class="fas fa-grin-tongue-wink"></i> No... just kidding! 💕
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photo Gallery -->
+            <section class="gallery-section" id="gallerySection">
+                <h2><i class="fas fa-images"></i> Our Memories Together</h2>
+                
+                <div class="gallery-container">
+                    <!-- Row 1 -->
+                    <div class="gallery-row">
+                        <!-- Photo 1 -->
+                        <div class="photo-frame">
+                            <div class="photo" id="photo1">
+                                <div class="photo-label">Our First Date 💕</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Photo 2 -->
+                        <div class="photo-frame">
+                            <div class="photo" id="photo2">
+                                <div class="photo-label">Litol Moments 🌟</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 2 -->
+                    <div class="gallery-row">
+                        <!-- Photo 3 -->
+                        <div class="photo-frame">
+                            <div class="photo" id="photo3">
+                                <div class="photo-label">Home Is You 🏠❤️</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Photo 4 -->
+                        <div class="photo-frame">
+                            <div class="photo" id="photo4">
+                                <div class="photo-label">Sweet Moments 🍭</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Countdown -->
+            <section class="countdown-section">
+                <h2><i class="fas fa-clock"></i> Countdown to Forever</h2>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">365</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">23</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">59</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">59</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+                <p class="countdown-text">Until our next Valentine's Day together 💘</p>
+            </section>
+
+            <!-- Final Message -->
+            <section class="final-message" id="finalMessage">
+                <div class="love-letter">
+                    <h3><i class="fas fa-envelope-open-text"></i> A Little Note For You</h3>
+                    <p class="letter-content">
+                        My Dearest,<br><br>
+                        Hi babyyy!!! first of all, thank you for putting up with me. For real. Thank you for loving me even when I am annoying, dramatic, sleepy, or all three at the same time. <br> <br> 
+
+I love how we can talk about anything, laugh at the dumbest things, and somehow turn random moments into something special. You really became my favorite notification and my favorite person. Even on bad days, you still manage to make me smile without trying. <br> <br> 
+
+Distance is annoying, but it does not change how much you mean to me. Every message, call, and little moments from you makes my day better. And yes, I still replay our moments in my head like a side story I never skip. <br> <br> 
+
+Happy Valentine’s Day, babyyy. Just know that I appreciate you so much and I am really grateful that you are mine. <br> <br> 
+
+I love you. Always. <br> <br>   
+
+                        Love,<br>
+                        Matthewwwwwww
+                        <span class="signature">Your Valentine 💖</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="hearts-footer">
+                    <span>💖</span>
+                    <span>💕</span>
+                    <span>💘</span>
+                    <span>💝</span>
+                    <span>💗</span>
+                </div>
+                <p>Made with <i class="fas fa-heart heartbeat"></i> for the most special person</p>
+                <p class="footer-note">Refresh the page to experience the magic again! ✨</p>
+            </footer>
+        </div>
+
+        <!-- Response Message (Hidden Initially) -->
+        <div class="response-modal" id="responseModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+                <div class="modal-body">
+                    <h2 id="responseTitle">You Said Yes! 💖</h2>
+                    <p id="responseText">This is the best Valentine's Day ever! I'm so happy! 🎉</p>
+                    <div class="celebration">🎊🎉💐🎈🥂</div>
+                    <button class="continue-btn" id="continueBtn">Continue the Magic ✨</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
